@@ -1,12 +1,41 @@
 h1{
 background-color: aqua;
+border: 10px solid aquamarine;
+border-style: dotted;
+font-style: italic;
+font-family:Verdana;
+font-weight: bold;
+text-align: center;
 }
 .parrafo{
+border: 3px solid darkgoldenrod;
+font-weight: 600;
+font-family: 'Segoe UI';
 background-color: yellow;
+margin: 5px;
+text-align: center;
 }
 div{
     background-color: antiquewhite;
+    border: solid 2px aliceblue;
+    font-weight: 700;
+    font-family:Helvetica;
+text-align: right;
+font-variant: small-caps;
 }
+
 span ul li{
     background-color: azure;
+    font-family: system-ui;
+    font-weight: bolder;
+    font-variant: small-caps;
+    font-style: italic;
+}
+
+.pie{
+    background-color: brown;
+font-variant: normal;
+text-align: center;
+font-weight: 500;
+font-family: Impact;
 }
