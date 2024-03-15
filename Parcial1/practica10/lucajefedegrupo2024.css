@@ -1,0 +1,32 @@
+hr{
+    border: 9px solid bisque;
+    border-style: double;
+}
+#elpepe{
+    cursor:no-drop;
+    border:none;
+    border-style: groove;
+    background-color: rosybrown;
+    font-family: Tahoma;
+    font-size: 30px;
+width: 500px;
+margin: 4pt;
+padding: 20px;
+color: blue;
+
+}
+.texto{
+    color: black;
+
+}
+.zelda{
+    color: slategray;
+    text-transform: capitalize;
+    font-family: Impact;
+}
+a:hover{
+    color: brown;
+}
+body{
+    background-image: url(ete\ sech.png);
+}
