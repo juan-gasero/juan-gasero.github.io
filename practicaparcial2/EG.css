@@ -1,0 +1,40 @@
+table{
+    filter: drop-shadow(30px 10px 12px rgb(57, 65, 21));
+    background-color: rgb(65, 160, 30);
+}
+table tbody th{
+   font-family: Verdana;
+    font-style: oblique;
+}
+table thead th{
+    font-size: 25px;
+    font-family: Impact;
+    font-weight: 50;
+}
+caption{
+    font-family: 'Segoe UI';
+    background-color: green;
+
+}
+.ouyea{
+background-color: springgreen;
+font-variant: small-caps;
+color: green;
+}
+a{
+    color: darkgreen;
+}
+ a:hover{
+    color: black;
+
+}
+
+table tfoot th
+{
+    font-family:monospace;
+    font-size: 20px;
+}
+body{
+    background-image: url(PP1.png);
+    background-color: black;
+}
