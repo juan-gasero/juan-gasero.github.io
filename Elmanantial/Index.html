@@ -10,10 +10,34 @@
 </head>
 <body style="    font-size: 1.8rem;
 font-family: 'Arima Madurai',cursive;
-color: #000;">
+color: #000;
+">
     <style>
+      @font-face {
+    font-family: 'Arima Madurai';
+    src: url('/ttf/arima-madurai-latin-200-normal.ttf') format('truetype');
+  }
+p{
+  text-align: center;
+}
      h1{
       text-align: center;
+     }
+     button{
+      display: flex;
+      align-items: center;
+     }
+     .sus center source {
+      display: flex;
+      align-items: center;
+      padding: 200px;
+      bottom: -20px;
+     }
+     .sex{
+      bottom: 90px;
+     }
+     img{
+      max-width: 100%;
      }
     </style>
    <!-- <header>Esta es mi pagina de refrescos el manantial</header>--> 
@@ -59,21 +83,21 @@ color: #000;">
         </div>
       </nav>
       
-<div style="background-image: url(imagenes/banner-home.jpg);"><source><img src="imagenes/logo-banner.png" style=" display: flex; align-items: center;justify-content: center;" ></source></div>
+<div class="sus" style="background-image: url(imagenes/banner-home.jpg);"> <center><source><img class="sex" src="imagenes/logo-banner.png" style=" display: flex; align-items: center;justify-content: center;" ></source></center></div>
        <h1>Sabor para todos los gustos</h1>
        <h2>Conoce Refrescos El Manantial</h2>
        <p class="paragraph">Nuestra historia se escribe con el sabor y la calidad en todos nuestros productos, creados para satisfacer las necesidades de diversos mercados en el país y en el extranjero.</p>
     <p></p>
-    <button type="button" class="btn btn-warning" style="display: flex; align-items: center;">Warning</button>
+   <center> <button type="button" class="btn btn-warning" style="display: flex; align-items: center;">Conocenos</button></center>
     <div class="row row-cols-1 row-cols-md-2 g-4">
       <div class="col">
         <div class="card">
     
           <div class="card-body">
-            <h1 class="card-title">Card title</h1>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <img src="..." class="card-img-top" alt="source"><br>
-                <button>Conocenos</button>
+            <h1 class="card-title">Nosotros</h1>
+            <p class="card-text">Nuestra historia, estructura y valores que rigen a nuestra empresa.</p>
+                <img src="imagenes/logo-banner.png" class="card-img" alt="source" width="100px"><br>
+                <center><button>Conocenos</button></center>
           </div>
         </div>
       </div>
@@ -81,10 +105,10 @@ color: #000;">
         <div class="card">
     
           <div class="card-body">
-            <h1 class="card-title">Card title</h1>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <img src="..." class="card-img-top" alt="source"><br>
-                <button class="btn-warning">Conocenos</button>
+            <h1 class="card-title">Empresas</h1>
+            <p class="card-text">La gran familia de marcas que conforman nuestro corporativo.            </p>
+                <img src="imagenes/home-secciones-figura-2.png" class="card-img-top" alt="source"><br>
+                <center> <button class="btn-warning">Conocenos</button></center>
           </div>
         </div>
       </div>
@@ -92,10 +116,10 @@ color: #000;">
         <div class="card">
     
           <div class="card-body">
-            <h1 class="card-title">Card title</h1>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                <img src="..." class="card-img-top" alt="source"><br>
-                <button class="btn-warning">Conocenos</button>
+            <h1 class="card-title">Nuestros procesos</h1>
+            <p class="card-text">Descubre cómo embotellamos el sabor de nuestros productos</p>
+            
+                <center> <button class="btn-warning">Conocenos</button></center>
           </div>
         </div>
       </div>
@@ -103,23 +127,23 @@ color: #000;">
         <div class="card">
     
           <div class="card-body">
-            <h1 class="card-title">Card title</h1>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <img src="..." class="card-img-top" alt="source"><br>
-                <button class="btn-warning">Conocenos</button>
+            <h1 class="card-title">Nuestros productos</h1>
+            <p class="card-text"> El delicioso resultado de nuestro trabajo</p>
+                <img src="imagenes/home-secciones-figura-4.png" class="card-img-top" alt="source"><br>
+                <center> <button class="btn-warning">Conocenos</button></center>
           </div>
         </div>
       </div>
     </div>
     <h1>Actualmente contamos con Centros de Distribución directos en</h1>
     <p>ROSARIO, MAZATLÁN, CULIACÁN, GUADALAJARA Y CIUDAD DE MÉXICO.</p>
-    <img src="" alt="">
-    <p>También contamos una red de distribuidores encargados de vender ToniCol en el país, así como alianzas con las principales tiendas de autoservicio en el país.</p>
-    <img src="" alt="">
-    <footer class="footer1">entre otras marcas nacionales que llevan nuestro producto hasta el consumidor final.</footer>
-    <footer style="background-image: linear-gradient(rgb(255, 247, 138), yellow);" class="footer2">
-      <div class="image"><img src="" alt=""></div></footer>
+      <div class="text-center"><img src="imagenes/home-mapa.png" alt=""></div></footer>
     
-       <script src="js/bootstrap.js"></script>
+    
+    <p>También contamos una red de distribuidores encargados de vender ToniCol en el país, así como alianzas con las principales tiendas de autoservicio en el país.</p>
+    <div class="text-center"><img src="imagenes/home-logos-1.png" alt=""><img src="imagenes/home-logos-2.png" alt=""></div>
+    <footer class="footer1">entre otras marcas nacionales que llevan nuestro producto hasta el consumidor final.</footer>
+    <footer style="background-image: linear-gradient(rgb(255, 247, 138), yellow);" class="footer2">a</footer>
+     <script src="js/bootstrap.js"></script>
 </body>
 </html>
