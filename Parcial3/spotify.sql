@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-06-2024 a las 03:52:01
+-- Tiempo de generación: 11-06-2024 a las 03:51:12
 -- Versión del servidor: 10.1.39-MariaDB
 -- Versión de PHP: 7.3.5
 
@@ -73,9 +73,64 @@ CREATE TABLE `canciones` (
   `Nombre` varchar(200) NOT NULL,
   `genero_id` int(11) NOT NULL,
   `duracion` time NOT NULL,
+  `Fecha` date NOT NULL,
   `activado` tinyint(1) NOT NULL,
   `foto` int(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `canciones`
+--
+
+INSERT INTO `canciones` (`ID`, `Nombre`, `genero_id`, `duracion`, `Fecha`, `activado`, `foto`) VALUES
+(1, 'Freak on a Leash', 1, '00:05:00', '2023-11-20', 1, 0),
+(2, 'Strobe', 2, '00:00:00', '2022-08-15', 1, 0),
+(3, 'Ghosts n Stuff', 2, '00:00:00', '2024-02-29', 1, 0),
+(4, 'I Remember', 2, '00:00:00', '2023-07-10', 1, 0),
+(5, 'The Veldt', 2, '00:00:00', '2023-04-05', 1, 0),
+(6, 'Raise Your Weapon', 2, '00:00:00', '2023-01-18', 1, 0),
+(7, 'Professional Griefers', 2, '00:00:00', '2023-09-03', 1, 0),
+(8, 'Some Chords', 2, '00:00:00', '2022-12-25', 1, 0),
+(9, 'Avaritia', 2, '00:00:00', '2024-06-07', 1, 0),
+(10, 'Brazil (2nd Edit)', 2, '00:00:00', '2023-10-12', 1, 0),
+(11, 'Monophobia', 2, '00:00:00', '2024-04-18', 1, 0),
+(12, 'Seeya', 2, '00:00:00', '2022-09-30', 1, 0),
+(13, 'HR 8938 Cephei', 2, '00:00:00', '2024-01-01', 1, 0),
+(14, 'Slip', 2, '00:00:00', '2022-10-20', 1, 0),
+(15, 'Moar Ghosts n Stuff', 2, '00:00:00', '2023-06-14', 1, 0),
+(16, 'Stronger', 3, '00:00:00', '2024-05-08', 1, 0),
+(17, 'Gold Digger', 3, '00:00:00', '2023-03-01', 1, 0),
+(18, 'Heartless', 3, '00:00:00', '2023-12-12', 1, 0),
+(19, 'Power', 3, '00:00:00', '2022-11-11', 1, 0),
+(20, 'Jesus Walks', 3, '00:00:00', '2023-08-09', 1, 0),
+(21, 'All of the Lights', 3, '00:00:00', '2024-02-14', 1, 0),
+(22, 'Runaway', 3, '00:00:00', '2023-05-30', 1, 0),
+(23, 'Black Skinhead', 3, '00:00:00', '2023-07-25', 1, 0),
+(24, 'Ultralight Beam', 3, '00:00:00', '2024-01-09', 1, 0),
+(25, 'Famous', 3, '00:00:00', '2023-09-22', 1, 0),
+(26, 'Love Lockdown', 3, '00:00:00', '2022-12-01', 1, 0),
+(27, 'No Church in the Wild', 3, '00:00:00', '2024-04-05', 1, 0),
+(28, 'Flashing Lights', 3, '00:00:00', '2023-10-29', 1, 0),
+(29, 'Bound 2', 3, '00:00:00', '2023-03-17', 1, 0),
+(30, 'Diamonds from Sierra Leone', 3, '00:00:00', '2022-09-07', 1, 0),
+(31, 'Mi Gusto Es', 4, '00:00:00', '2023-01-21', 1, 0),
+(32, 'Te Presumo', 4, '00:00:00', '2023-07-06', 1, 0),
+(33, 'La Mejor de Todas', 4, '00:00:00', '2023-05-11', 1, 0),
+(34, 'Vas a Llorar por Mí', 4, '00:00:00', '2022-12-31', 1, 0),
+(35, 'Consecuencia de Mis Actos', 4, '00:00:00', '2023-08-25', 1, 0),
+(36, 'Que Bonita Es Mi Tierra', 4, '00:00:00', '2024-03-28', 1, 0),
+(37, 'Me Gusta Todo de Ti', 4, '00:00:00', '2023-11-02', 1, 0),
+(38, 'Dime Que Me Quieres', 4, '00:00:00', '2022-10-15', 1, 0),
+(39, 'La Gran Pachanga', 4, '00:00:00', '2024-01-03', 1, 0),
+(40, 'Que Te Ruegue Quien Te Quiera', 4, '00:00:00', '2023-04-19', 1, 0),
+(41, 'Te Quiero a Morir', 4, '00:00:00', '2022-11-07', 1, 0),
+(42, 'Como Pudiste', 4, '00:00:00', '2023-09-10', 1, 0),
+(43, 'Homenaje a Lalo Mora', 4, '00:00:00', '2023-02-22', 1, 0),
+(44, 'Ya Te Olvide', 4, '00:00:00', '2023-06-02', 1, 0),
+(45, 'Parece Mentira', 4, '00:00:00', '2023-04-26', 1, 0),
+(46, 'Martha', 5, '00:00:00', '2023-10-08', 1, 0),
+(47, 'Downtown Train', 5, '00:00:00', '2023-01-16', 1, 0),
+(48, 'Hold On', 5, '00:00:00', '2024-02-05', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -125,6 +180,7 @@ INSERT INTO `generos` (`ID`, `Nombre`) VALUES
 CREATE TABLE `membresias` (
   `ID` int(11) NOT NULL,
   `Nombre` varchar(100) NOT NULL,
+  `descripcion` varchar(300) NOT NULL,
   `Precio` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -132,12 +188,12 @@ CREATE TABLE `membresias` (
 -- Volcado de datos para la tabla `membresias`
 --
 
-INSERT INTO `membresias` (`ID`, `Nombre`, `Precio`) VALUES
-(1, 'Free', 0),
-(2, 'Individual', 129),
-(3, 'Duo', 169),
-(4, 'Familiar', 199),
-(5, 'Estudiantes', 69);
+INSERT INTO `membresias` (`ID`, `Nombre`, `descripcion`, `Precio`) VALUES
+(1, 'Free', '', 0),
+(2, 'Individual', '', 129),
+(3, 'Duo', '', 169),
+(4, 'Familiar', '', 199),
+(5, 'Estudiantes', '', 69);
 
 -- --------------------------------------------------------
 
@@ -180,6 +236,62 @@ CREATE TABLE `usuarios` (
   `correo` varchar(150) NOT NULL,
   `membresia_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`ID`, `Nombre`, `correo`, `membresia_id`) VALUES
+(1, 'Nombae1', 'correo1@example.com', 1),
+(2, 'Nombre2', 'correo2@example.com', 2),
+(3, 'Nombre3', 'correo3@example.com', 3),
+(4, 'Nombre4', 'correo4@example.com', 4),
+(5, 'Nombre5', 'correo5@example.com', 5),
+(6, 'Nombre6', 'correo6@example.com', 1),
+(7, 'Nombre7', 'correo7@example.com', 2),
+(8, 'Nombre8', 'correo8@example.com', 3),
+(9, 'Nombre9', 'correo9@example.com', 4),
+(10, 'Nombre10', 'correo10@example.com', 5),
+(11, 'Nombre11', 'correo11@example.com', 1),
+(12, 'Nombre12', 'correo12@example.com', 2),
+(13, 'Nombre13', 'correo13@example.com', 3),
+(14, 'Nombre14', 'correo14@example.com', 4),
+(15, 'Nombre15', 'correo15@example.com', 5),
+(16, 'Nombre16', 'correo16@example.com', 1),
+(17, 'Nambre17', 'correo17@example.com', 2),
+(18, 'Nombre18', 'correo18@example.com', 3),
+(19, 'Nombre19', 'correo19@example.com', 4),
+(20, 'Nombre20', 'correo20@example.com', 5),
+(21, 'Nombre21', 'correo21@example.com', 1),
+(22, 'Nombre22', 'correo22@example.com', 2),
+(23, 'Nombre23', 'correo23@example.com', 3),
+(24, 'Nombre24', 'correo24@example.com', 4),
+(25, 'Nombre25', 'correo25@example.com', 5),
+(26, 'Nombre26', 'correo26@example.com', 1),
+(27, 'Nombre27', 'correo27@example.com', 2),
+(28, 'Nombre28', 'correo28@example.com', 3),
+(29, 'Nombre29', 'correo29@example.com', 4),
+(30, 'Nombre30', 'correo30@example.com', 5),
+(31, 'Nombre31', 'correo31@example.com', 1),
+(32, 'Nombre32', 'correo32@example.com', 2),
+(33, 'Nombre33', 'correo33@example.com', 3),
+(34, 'Nombre34', 'correo34@example.com', 4),
+(35, 'Nombre35', 'correo35@example.com', 5),
+(36, 'Nombre36', 'correo36@example.com', 1),
+(37, 'Nombre37', 'correo37@example.com', 2),
+(38, 'Nombre38', 'correo38@example.com', 3),
+(39, 'Nombre39', 'correo39@example.com', 4),
+(40, 'Nombre40', 'correo40@example.com', 5),
+(41, 'Nombre41', 'correo41@example.com', 1),
+(42, 'Nombre42', 'correo42@example.com', 2),
+(43, 'Nombre43', 'correo43@example.com', 3),
+(44, 'Nombre44', 'correo44@example.com', 4),
+(45, 'Nombre45', 'correo45@example.com', 5),
+(46, 'Nombre46', 'correo46@example.com', 1),
+(47, 'Nombre47', 'correo47@example.com', 2),
+(48, 'Nombre48', 'correo48@example.com', 3),
+(49, 'Nombre49', 'correo49@example.com', 4),
+(50, 'Nombre50', 'correo50@example.com', 5);
 
 --
 -- Índices para tablas volcadas
@@ -264,13 +376,13 @@ ALTER TABLE `artista`
 -- AUTO_INCREMENT de la tabla `artistas_canciones`
 --
 ALTER TABLE `artistas_canciones`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT de la tabla `canciones`
 --
 ALTER TABLE `canciones`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT de la tabla `favoritos`
@@ -306,7 +418,7 @@ ALTER TABLE `playlist_canciones`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- Restricciones para tablas volcadas
