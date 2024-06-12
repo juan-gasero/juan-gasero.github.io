@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-06-2024 a las 02:56:56
+-- Tiempo de generación: 12-06-2024 a las 03:05:02
 -- Versión del servidor: 10.1.39-MariaDB
 -- Versión de PHP: 7.3.5
 
@@ -73,6 +73,7 @@ CREATE TABLE `canciones` (
   `Nombre` varchar(200) NOT NULL,
   `genero_id` int(11) NOT NULL,
   `duracion` time NOT NULL,
+  `Fecha` date NOT NULL,
   `activado` tinyint(1) NOT NULL,
   `foto` int(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -81,56 +82,55 @@ CREATE TABLE `canciones` (
 -- Volcado de datos para la tabla `canciones`
 --
 
-INSERT INTO `canciones` (`ID`, `Nombre`, `genero_id`, `duracion`, `activado`, `foto`) VALUES
-(1, 'Freak on a Leash', 1, '00:05:00', 1, 0),
-(2, 'Strobe', 2, '00:00:00', 1, 0),
-(3, 'Ghosts n Stuff', 2, '00:00:00', 1, 0),
-(4, 'I Remember', 2, '00:00:00', 1, 0),
-(5, 'The Veldt', 2, '00:00:00', 1, 0),
-(6, 'Raise Your Weapon', 2, '00:00:00', 1, 0),
-(7, 'Professional Griefers', 2, '00:00:00', 1, 0),
-(8, 'Some Chords', 2, '00:00:00', 1, 0),
-(9, 'Avaritia', 2, '00:00:00', 1, 0),
-(10, 'Brazil (2nd Edit)', 2, '00:00:00', 1, 0),
-(11, 'Monophobia', 2, '00:00:00', 1, 0),
-(12, 'Seeya', 2, '00:00:00', 1, 0),
-(13, 'HR 8938 Cephei', 2, '00:00:00', 1, 0),
-(14, 'Slip', 2, '00:00:00', 1, 0),
-(15, 'Moar Ghosts n Stuff', 2, '00:00:00', 1, 0),
-(16, 'Stronger', 3, '00:00:00', 1, 0),
-(17, 'Gold Digger', 3, '00:00:00', 1, 0),
-(18, 'Heartless', 3, '00:00:00', 1, 0),
-(19, 'Power', 3, '00:00:00', 1, 0),
-(20, 'Jesus Walks', 3, '00:00:00', 1, 0),
-(21, 'All of the Lights', 3, '00:00:00', 1, 0),
-(22, 'Runaway', 3, '00:00:00', 1, 0),
-(23, 'Black Skinhead', 3, '00:00:00', 1, 0),
-(24, 'Ultralight Beam', 3, '00:00:00', 1, 0),
-(25, 'Famous', 3, '00:00:00', 1, 0),
-(26, 'Love Lockdown', 3, '00:00:00', 1, 0),
-(27, 'No Church in the Wild', 3, '00:00:00', 1, 0),
-(28, 'Flashing Lights', 3, '00:00:00', 1, 0),
-(29, 'Bound 2', 3, '00:00:00', 1, 0),
-(30, 'Diamonds from Sierra Leone', 3, '00:00:00', 1, 0),
-(31, 'Mi Gusto Es', 4, '00:00:00', 1, 0),
-(32, 'Te Presumo', 4, '00:00:00', 1, 0),
-(33, 'La Mejor de Todas', 4, '00:00:00', 1, 0),
-(34, 'Vas a Llorar por Mí', 4, '00:00:00', 1, 0),
-(35, 'Consecuencia de Mis Actos', 4, '00:00:00', 1, 0),
-(36, 'Que Bonita Es Mi Tierra', 4, '00:00:00', 1, 0),
-(37, 'Me Gusta Todo de Ti', 4, '00:00:00', 1, 0),
-(38, 'Dime Que Me Quieres', 4, '00:00:00', 1, 0),
-(39, 'La Gran Pachanga', 4, '00:00:00', 1, 0),
-(40, 'Que Te Ruegue Quien Te Quiera', 4, '00:00:00', 1, 0),
-(41, 'Te Quiero a Morir', 4, '00:00:00', 1, 0),
-(42, 'Como Pudiste', 4, '00:00:00', 1, 0),
-(43, 'Homenaje a Lalo Mora', 4, '00:00:00', 1, 0),
-(44, 'Ya Te Olvide', 4, '00:00:00', 1, 0),
-(45, 'Parece Mentira', 4, '00:00:00', 1, 0),
-(46, 'Martha', 5, '00:00:00', 1, 0),
-(47, 'Downtown Train', 5, '00:00:00', 1, 0),
-(48, 'Hold On', 5, '00:00:00', 1, 0),
-(49, 'I Hope That I Don\'t Fall in Love with You', 5, '00:00:00', 1, 0);
+INSERT INTO `canciones` (`ID`, `Nombre`, `genero_id`, `duracion`, `Fecha`, `activado`, `foto`) VALUES
+(1, 'Freak on a Leash', 1, '00:05:00', '2023-11-20', 1, 0),
+(2, 'Strobe', 2, '00:00:00', '2022-08-15', 1, 0),
+(3, 'Ghosts n Stuff', 2, '00:00:00', '2024-02-29', 1, 0),
+(4, 'I Remember', 2, '00:00:00', '2023-07-10', 1, 0),
+(5, 'The Veldt', 2, '00:00:00', '2023-04-05', 1, 0),
+(6, 'Raise Your Weapon', 2, '00:00:00', '2023-01-18', 1, 0),
+(7, 'Professional Griefers', 2, '00:00:00', '2023-09-03', 1, 0),
+(8, 'Some Chords', 2, '00:00:00', '2022-12-25', 1, 0),
+(9, 'Avaritia', 2, '00:00:00', '2024-06-07', 1, 0),
+(10, 'Brazil (2nd Edit)', 2, '00:00:00', '2023-10-12', 1, 0),
+(11, 'Monophobia', 2, '00:00:00', '2024-04-18', 1, 0),
+(12, 'Seeya', 2, '00:00:00', '2022-09-30', 1, 0),
+(13, 'HR 8938 Cephei', 2, '00:00:00', '2024-01-01', 1, 0),
+(14, 'Slip', 2, '00:00:00', '2022-10-20', 1, 0),
+(15, 'Moar Ghosts n Stuff', 2, '00:00:00', '2023-06-14', 1, 0),
+(16, 'Stronger', 3, '00:00:00', '2024-05-08', 1, 0),
+(17, 'Gold Digger', 3, '00:00:00', '2023-03-01', 1, 0),
+(18, 'Heartless', 3, '00:00:00', '2023-12-12', 1, 0),
+(19, 'Power', 3, '00:00:00', '2022-11-11', 1, 0),
+(20, 'Jesus Walks', 3, '00:00:00', '2023-08-09', 1, 0),
+(21, 'All of the Lights', 3, '00:00:00', '2024-02-14', 1, 0),
+(22, 'Runaway', 3, '00:00:00', '2023-05-30', 1, 0),
+(23, 'Black Skinhead', 3, '00:00:00', '2023-07-25', 1, 0),
+(24, 'Ultralight Beam', 3, '00:00:00', '2024-01-09', 1, 0),
+(25, 'Famous', 3, '00:00:00', '2023-09-22', 1, 0),
+(26, 'Love Lockdown', 3, '00:00:00', '2022-12-01', 1, 0),
+(27, 'No Church in the Wild', 3, '00:00:00', '2024-04-05', 1, 0),
+(28, 'Flashing Lights', 3, '00:00:00', '2023-10-29', 1, 0),
+(29, 'Bound 2', 3, '00:00:00', '2023-03-17', 1, 0),
+(30, 'Diamonds from Sierra Leone', 3, '00:00:00', '2022-09-07', 1, 0),
+(31, 'Mi Gusto Es', 4, '00:00:00', '2023-01-21', 1, 0),
+(32, 'Te Presumo', 4, '00:00:00', '2023-07-06', 1, 0),
+(33, 'La Mejor de Todas', 4, '00:00:00', '2023-05-11', 1, 0),
+(34, 'Vas a Llorar por Mí', 4, '00:00:00', '2022-12-31', 1, 0),
+(35, 'Consecuencia de Mis Actos', 4, '00:00:00', '2023-08-25', 1, 0),
+(36, 'Que Bonita Es Mi Tierra', 4, '00:00:00', '2024-03-28', 1, 0),
+(37, 'Me Gusta Todo de Ti', 4, '00:00:00', '2023-11-02', 1, 0),
+(38, 'Dime Que Me Quieres', 4, '00:00:00', '2022-10-15', 1, 0),
+(39, 'La Gran Pachanga', 4, '00:00:00', '2024-01-03', 1, 0),
+(40, 'Que Te Ruegue Quien Te Quiera', 4, '00:00:00', '2023-04-19', 1, 0),
+(41, 'Te Quiero a Morir', 4, '00:00:00', '2022-11-07', 1, 0),
+(42, 'Como Pudiste', 4, '00:00:00', '2023-09-10', 1, 0),
+(43, 'Homenaje a Lalo Mora', 4, '00:00:00', '2023-02-22', 1, 0),
+(44, 'Ya Te Olvide', 4, '00:00:00', '2023-06-02', 1, 0),
+(45, 'Parece Mentira', 4, '00:00:00', '2023-04-26', 1, 0),
+(46, 'Martha', 5, '00:00:00', '2023-10-08', 1, 0),
+(47, 'Downtown Train', 5, '00:00:00', '2023-01-16', 1, 0),
+(48, 'Hold On', 5, '00:00:00', '2024-02-05', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -143,6 +143,62 @@ CREATE TABLE `favoritos` (
   `usuario_id` int(11) NOT NULL,
   `Cancion_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `favoritos`
+--
+
+INSERT INTO `favoritos` (`ID`, `usuario_id`, `Cancion_id`) VALUES
+(1, 14, 27),
+(2, 3, 48),
+(3, 11, 22),
+(4, 46, 19),
+(5, 25, 4),
+(6, 38, 13),
+(7, 20, 48),
+(8, 9, 31),
+(9, 42, 16),
+(10, 18, 35),
+(11, 29, 7),
+(12, 44, 24),
+(13, 15, 41),
+(14, 6, 33),
+(15, 21, 10),
+(16, 48, 26),
+(17, 12, 39),
+(18, 34, 5),
+(19, 23, 17),
+(20, 45, 30),
+(21, 8, 43),
+(22, 36, 14),
+(23, 19, 28),
+(24, 2, 40),
+(25, 32, 11),
+(26, 49, 25),
+(27, 16, 38),
+(28, 13, 46),
+(29, 27, 9),
+(30, 41, 22),
+(31, 5, 34),
+(32, 18, 44),
+(33, 31, 15),
+(34, 24, 42),
+(35, 10, 29),
+(36, 47, 20),
+(37, 14, 36),
+(38, 26, 12),
+(39, 39, 8),
+(40, 22, 45),
+(41, 17, 33),
+(42, 35, 21),
+(43, 4, 48),
+(44, 28, 16),
+(45, 43, 13),
+(46, 11, 39),
+(47, 25, 32),
+(48, 19, 44),
+(49, 38, 27),
+(50, 7, 41);
 
 -- --------------------------------------------------------
 
@@ -180,6 +236,7 @@ INSERT INTO `generos` (`ID`, `Nombre`) VALUES
 CREATE TABLE `membresias` (
   `ID` int(11) NOT NULL,
   `Nombre` varchar(100) NOT NULL,
+  `descripcion` varchar(300) NOT NULL,
   `Precio` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -187,12 +244,12 @@ CREATE TABLE `membresias` (
 -- Volcado de datos para la tabla `membresias`
 --
 
-INSERT INTO `membresias` (`ID`, `Nombre`, `Precio`) VALUES
-(1, 'Free', 0),
-(2, 'Individual', 129),
-(3, 'Duo', 169),
-(4, 'Familiar', 199),
-(5, 'Estudiantes', 69);
+INSERT INTO `membresias` (`ID`, `Nombre`, `descripcion`, `Precio`) VALUES
+(1, 'Free', '', 0),
+(2, 'Individual', '', 129),
+(3, 'Duo', '', 169),
+(4, 'Familiar', '', 199),
+(5, 'Estudiantes', '', 69);
 
 -- --------------------------------------------------------
 
@@ -210,6 +267,42 @@ CREATE TABLE `playlist` (
   `publico` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Volcado de datos para la tabla `playlist`
+--
+
+INSERT INTO `playlist` (`ID`, `Nombre`, `Usuario_id`, `duracion`, `tot_cancion`, `descripcion`, `publico`) VALUES
+(1, 'Juan Pérez', 10, '08:00:00', 20, 'Este es un ejemplo de descripción', 1),
+(2, 'María García', 15, '09:30:00', 30, 'Otro ejemplo de descripción', 0),
+(3, 'Pedro Sánchez', 20, '10:45:00', 25, 'Descripción corta', 1),
+(4, 'Ana López', 25, '11:15:00', 40, 'Descripción larga pero no demasiado', 0),
+(5, 'Carlos Martínez', 30, '12:00:00', 10, 'Descripción breve', 1),
+(6, 'Sofía Rodríguez', 35, '13:30:00', 35, 'Descripción con varios caracteres', 0),
+(7, 'Luis González', 40, '14:15:00', 20, 'Descripción con espacios', 1),
+(8, 'Isabel Díaz', 45, '15:00:00', 45, 'Descripción con mayúsculas', 0),
+(9, 'Francisco Hernández', 10, '08:30:00', 15, 'Descripción con números', 1),
+(10, 'Eva Morales', 20, '09:00:00', 30, 'Descripción con símbolos', 0),
+(11, 'Miguel Ángel', 25, '10:15:00', 25, 'Descripción con acentos', 1),
+(12, 'Laura Pérez', 30, '11:30:00', 40, 'Descripción con diacríticos', 0),
+(13, 'Javier Sánchez', 35, '12:15:00', 10, 'Descripción con guiones', 1),
+(14, 'Cristina García', 40, '13:00:00', 35, 'Descripción con puntos', 0),
+(15, 'Rafael López', 45, '14:30:00', 20, 'Descripción con comas', 1),
+(16, 'María José', 10, '08:45:00', 15, 'Descripción con paréntesis', 0),
+(17, 'Pedro José', 20, '09:15:00', 30, 'Descripción con corchetes', 1),
+(18, 'Ana María', 25, '10:30:00', 25, 'Descripción con llaves', 0),
+(19, 'Carlos Alberto', 30, '11:45:00', 40, 'Descripción con símbolos especiales', 1),
+(20, 'Sofía Elena', 35, '12:30:00', 10, 'Descripción con espacios en blanco', 0),
+(21, 'Luis Fernando', 40, '13:45:00', 35, 'Descripción con saltos de línea', 1),
+(22, 'Isabel Cristina', 45, '14:15:00', 20, 'Descripción con tabulaciones', 0),
+(23, 'Francisco Javier', 10, '08:15:00', 15, 'Descripción con caracteres especiales', 1),
+(24, 'Eva María', 20, '09:45:00', 30, 'Descripción con mayúsculas y minúsculas', 0),
+(25, 'Miguel Ángel', 25, '10:45:00', 25, 'Descripción con números y letras', 1),
+(26, 'Laura Sofía', 30, '11:15:00', 40, 'Descripción con símbolos y números', 0),
+(27, 'Javier Alberto', 35, '12:45:00', 10, 'Descripción con espacios y símbolos', 1),
+(28, 'Cristina Elena', 40, '13:15:00', 35, 'Descripción con mayúsculas y símbolos', 0),
+(29, 'Rafael Luis', 45, '14:45:00', 20, 'Descripción con números y símbolos', 1),
+(30, 'María del Carmen', 10, '08:30:00', 15, 'Descripción con acentos y diacríticos', 0);
+
 -- --------------------------------------------------------
 
 --
@@ -223,6 +316,46 @@ CREATE TABLE `playlist_canciones` (
   `usuario_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Volcado de datos para la tabla `playlist_canciones`
+--
+
+INSERT INTO `playlist_canciones` (`ID`, `playlist_id`, `Cancion_id`, `usuario_id`) VALUES
+(1, 10, 20, 30),
+(2, 5, 15, 40),
+(3, 28, 11, 25),
+(4, 18, 46, 10),
+(5, 22, 38, 45),
+(6, 1, 24, 20),
+(7, 14, 42, 35),
+(8, 29, 19, 48),
+(9, 7, 31, 15),
+(10, 26, 44, 30),
+(11, 16, 27, 40),
+(12, 3, 13, 25),
+(13, 20, 36, 10),
+(14, 11, 45, 35),
+(15, 25, 21, 20),
+(16, 9, 39, 45),
+(17, 17, 29, 30),
+(18, 4, 16, 25),
+(19, 23, 43, 10),
+(20, 15, 34, 40),
+(21, 6, 22, 35),
+(22, 27, 48, 20),
+(23, 12, 30, 25),
+(24, 21, 41, 10),
+(25, 8, 26, 40),
+(26, 24, 37, 35),
+(27, 19, 23, 20),
+(28, 13, 40, 45),
+(29, 2, 18, 30),
+(30, 10, 32, 25),
+(31, 16, 44, 10),
+(32, 25, 28, 40),
+(33, 7, 35, 35),
+(34, 22, 20, 20);
+
 -- --------------------------------------------------------
 
 --
@@ -235,6 +368,62 @@ CREATE TABLE `usuarios` (
   `correo` varchar(150) NOT NULL,
   `membresia_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`ID`, `Nombre`, `correo`, `membresia_id`) VALUES
+(1, 'Nombae1', 'correo1@example.com', 1),
+(2, 'Nombre2', 'correo2@example.com', 2),
+(3, 'Nombre3', 'correo3@example.com', 3),
+(4, 'Nombre4', 'correo4@example.com', 4),
+(5, 'Nombre5', 'correo5@example.com', 5),
+(6, 'Nombre6', 'correo6@example.com', 1),
+(7, 'Nombre7', 'correo7@example.com', 2),
+(8, 'Nombre8', 'correo8@example.com', 3),
+(9, 'Nombre9', 'correo9@example.com', 4),
+(10, 'Nombre10', 'correo10@example.com', 5),
+(11, 'Nombre11', 'correo11@example.com', 1),
+(12, 'Nombre12', 'correo12@example.com', 2),
+(13, 'Nombre13', 'correo13@example.com', 3),
+(14, 'Nombre14', 'correo14@example.com', 4),
+(15, 'Nombre15', 'correo15@example.com', 5),
+(16, 'Nombre16', 'correo16@example.com', 1),
+(17, 'Nambre17', 'correo17@example.com', 2),
+(18, 'Nombre18', 'correo18@example.com', 3),
+(19, 'Nombre19', 'correo19@example.com', 4),
+(20, 'Nombre20', 'correo20@example.com', 5),
+(21, 'Nombre21', 'correo21@example.com', 1),
+(22, 'Nombre22', 'correo22@example.com', 2),
+(23, 'Nombre23', 'correo23@example.com', 3),
+(24, 'Nombre24', 'correo24@example.com', 4),
+(25, 'Nombre25', 'correo25@example.com', 5),
+(26, 'Nombre26', 'correo26@example.com', 1),
+(27, 'Nombre27', 'correo27@example.com', 2),
+(28, 'Nombre28', 'correo28@example.com', 3),
+(29, 'Nombre29', 'correo29@example.com', 4),
+(30, 'Nombre30', 'correo30@example.com', 5),
+(31, 'Nombre31', 'correo31@example.com', 1),
+(32, 'Nombre32', 'correo32@example.com', 2),
+(33, 'Nombre33', 'correo33@example.com', 3),
+(34, 'Nombre34', 'correo34@example.com', 4),
+(35, 'Nombre35', 'correo35@example.com', 5),
+(36, 'Nombre36', 'correo36@example.com', 1),
+(37, 'Nombre37', 'correo37@example.com', 2),
+(38, 'Nombre38', 'correo38@example.com', 3),
+(39, 'Nombre39', 'correo39@example.com', 4),
+(40, 'Nombre40', 'correo40@example.com', 5),
+(41, 'Nombre41', 'correo41@example.com', 1),
+(42, 'Nombre42', 'correo42@example.com', 2),
+(43, 'Nombre43', 'correo43@example.com', 3),
+(44, 'Nombre44', 'correo44@example.com', 4),
+(45, 'Nombre45', 'correo45@example.com', 5),
+(46, 'Nombre46', 'correo46@example.com', 1),
+(47, 'Nombre47', 'correo47@example.com', 2),
+(48, 'Nombre48', 'correo48@example.com', 3),
+(49, 'Nombre49', 'correo49@example.com', 4),
+(50, 'Nombre50', 'correo50@example.com', 5);
 
 --
 -- Índices para tablas volcadas
@@ -319,7 +508,7 @@ ALTER TABLE `artista`
 -- AUTO_INCREMENT de la tabla `artistas_canciones`
 --
 ALTER TABLE `artistas_canciones`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT de la tabla `canciones`
@@ -331,7 +520,7 @@ ALTER TABLE `canciones`
 -- AUTO_INCREMENT de la tabla `favoritos`
 --
 ALTER TABLE `favoritos`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT de la tabla `generos`
@@ -349,19 +538,19 @@ ALTER TABLE `membresias`
 -- AUTO_INCREMENT de la tabla `playlist`
 --
 ALTER TABLE `playlist`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT de la tabla `playlist_canciones`
 --
 ALTER TABLE `playlist_canciones`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- Restricciones para tablas volcadas
