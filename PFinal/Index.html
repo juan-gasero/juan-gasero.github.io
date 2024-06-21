@@ -3,10 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto fifnal</title>
+    <title>Proyecto fifnal parcial 3</title>    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <script src="bootstrap-5.0.2-dist/js/jquery-3.7.1.js"></script>
 </head>
 <body>
-    <P>Juan Fernando Gastélum Quintero en linea 19/06/2024</P>
+    <style>
+        .header{
+            color: antiquewhite;
+            background-color: #611111;
+            font-size: 40px;
+            font-family: 'Times New Roman';
+            text-align: center;
+        }
+        footer{
+            background-color: #611111;
+            color: antiquewhite;
+            font-family: 'Courier New';
+            text-align: end;
+        }
+        body{
+            background-image: url(elfondochusco.jpg);
+        }
+        h1{
+           color: aliceblue;
+           background-color: #911e1e;
+        }
+        h3{
+            background-color: brown;
+            color: azure;
+            font-family: 'Helvetica Neue';
+            
+        }
+        .container{
+            background-color: #911e1e;
+        }
+    </style>
+    <P class="header"><img src="a.webp" width="10%">
+        Juan Fernando Gastélum Quintero en linea 20/06/2024</P>
+    <div class="container">
+        <div class="row">
+            <h1>Proyecto fifnal parcial 3</h1>
+            <div class="col">
+                <h3>SELECT * FROM alumno</h3>
+                <img src="Consulta1-1.png" width="100%">
+                <img src="Consulta1-2.png" width="100%">
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col">
+                <h3>
+                    SELECT curso.nombreDescriptivo,asignatura.nombre <br>
+FROM curso <br>
+INNER JOIN asignatura <br>
+ON curso.idCurso=asignatura.curso <br>
+                </h3>
+                <img src="Consulta2-1.png" width="100%">
+            </div>
+        </div>
+    </div>
     <footer>@drpepperdeces en insta</footer>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
 </body>
 </html>
