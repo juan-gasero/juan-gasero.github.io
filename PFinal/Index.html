@@ -123,15 +123,59 @@ ON curso.idCurso=asignatura.curso <br>
         <div class="row">
             <div class="col">
                 <h3>Consulta #9</h3>
-                <img src="" alt="" width="100%">
-            <h4></h4>
+                <img src="Consulta9.png" alt="" width="100%">
+            <h4>SELECT
+                c.idCurso, 
+                c.nombreDescriptivo AS nombre_curso,
+                a.idAsignatura,
+                a.nombre AS nombre_asignatura,
+                p.idProfesor,
+                p.nombre AS nombre_profesor,
+                p.apellido1 AS apellido1_profesor,
+                p.apellido2 AS apellido2_profesor
+                FROM
+                curso c
+                JOIN
+                asignatura a ON c.idCurso = a.curso
+                JOIN
+                impartir i ON a.idAsignatura = i.idAsignatura
+                JOIN
+                profesor p ON i.idProfesor = p.idProfesor
+                ORDER BY
+                c.idCurso, a.idAsignatura, p.idProfesor;</h4>
             </div>
         </div>
         <div class="row">
             <div class="col">
                 <h3>Consulta #10</h3>
-                <img src="" alt="" width="100%">
-            <h4></h4>
+                <img src="Consulta10.png" alt="" width="100%">
+            <h4>SELECT
+                al.idAlumno,
+                al.nombre AS nombre_alumno,
+                al.apellido1 AS apellido1_alumno,
+                al.apellido2 AS apellido2_alumno,
+                a.idAsignatura,
+                a.nombre AS nombre_asignatura,
+                p.idProfesor,
+                p.nombre AS nombre_profesor,
+                p.apellido1 AS apellido1_profesor,
+                p.apellido2 AS apellido2_profesor,
+                c.idCurso,
+                c.nombreDescriptivo AS nombre_curso
+                FROM
+                alumno al
+                JOIN
+                matricula m ON al.idAlumno = m.idAlumno
+                JOIN
+                asignatura a ON m.idAsignatura = a.idAsignatura
+                JOIN
+                impartir i ON a.idAsignatura = i.idAsignatura
+                JOIN
+                profesor p ON i.idProfesor = p.idProfesor
+                JOIN
+                curso c ON a.curso = c.idCurso
+                ORDER BY
+                al.idAlumno, a.idAsignatura</h4>
             </div>
         </div>
     </div>
