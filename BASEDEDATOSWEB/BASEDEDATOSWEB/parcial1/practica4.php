@@ -24,7 +24,7 @@
 
     //Valido pregunta 2 sobre la ciudad de Pékin
     echo "<h3 style='font-family:Impact;'> ¿De donde proviene la ciudad de Pekin? </h3>";
-    echo "<h5>Repuesta seleccionada ".$pregunta2." ---- Correcta = Austria-Hungria</h5>";
+    echo "<h5>Repuesta seleccionada ".$pregunta2." ---- Correcta = China</h5>";
     if(strtoupper($pregunta2) == "CHINA"){
         echo "<center><img src='Imagenes/Correcta.png' width='50px'></center><hr>";
         $aciertos++;
@@ -34,7 +34,7 @@
 
     //Pregunta 3 - Cual pais tiene un aguila en su bandera y en su escudo de armas
     echo "<h3 style='font-family:Impact;'> ¿Cuáles paises tiene un aguila en su bandera y en su escudo de armas? </h3>";
-    echo "<h5>Repuesta  ---- Correcta = Austria-Hungria</h5>";
+    echo "<h5>Repuesta  ---- Correcta = Serbia y México</h5>";
 
     $p3_respuestas_correctas = 0;
 
@@ -55,7 +55,7 @@
 
     //pregunta 4
     echo "<h3 style='font-family:Impact;'> ¿Cuál fue la razon principal de la caida del Imperio Romano? </h3>";
-    echo "<h5>Repuesta  ---- Correcta = Austria-Hungria</h5>";
+    echo "<h5>Repuesta  ---- ".$pregunta4." Correcta = Problemas</h5>";
 
     if($pregunta4 == "Problemas"){
         $aciertos++;
@@ -65,7 +65,7 @@
     }
     //pregunta 5
     echo "<h3 style='font-family:Impact;'> ¿Que paises de estos tienen piramides? </h3>";
-    echo "<h5>Repuesta seleccionada ---- Correcta = Austria-Hungria</h5>";
+    echo "<h5>Repuesta seleccionada ---- Correctas = Súdan, México y Egipto</h5>";
     $p5_CORRERCTO= 0 ;
       
     if(count($pregunta5) == 3){
@@ -84,7 +84,7 @@
 }
     //pregunta 6
     echo "<h3 style='font-family:Impact;'> ¿Como se llama este pais? </h3>";
-    echo "<h5>Repuesta seleccionada ".$pregunta6." ---- Correcta = Austria-Hungria</h5>";
+    echo "<h5>Repuesta seleccionada ".$pregunta6." ---- Correcta = Nueva Zelanda</h5>";
     if($pregunta6 == "NZ"){
         $aciertos++;
         echo "<center><img src='Imagenes/Correcta.png' width='50px'></center><hr>";
@@ -94,7 +94,7 @@
 
     //pregunta 7
     echo "<h3 style='font-family:Impact;'> ¿De que pais es sede de la liga de futbol'MLS'? </h3>";
-    echo "<h5>Repuesta seleccionada ".$pregunta7." ---- Correcta = Austria-Hungria</h5>";
+    echo "<h5>Repuesta seleccionada ".$pregunta7." ---- Correcta = Estados Unidos de America</h5>";
     if($pregunta7 == "USA"){
         $aciertos++;
         echo "<center><img src='Imagenes/Correcta.png' width='50px'></center><hr>";
@@ -104,7 +104,7 @@
 
     //pregunta 8
     echo "<h3 style='font-family:Impact;'> ¿cual es el pais mas grande en extension territorial? </h3>";
-    echo "<h5>Repuesta seleccionada ".$pregunta8." ---- Correcta = Austria-Hungria</h5>";
+    echo "<h5>Repuesta seleccionada ".$pregunta8." ---- Correcta = Rusia</h5>";
     if(strtoupper($pregunta8) == "RUSIA"){
         echo "<center><img src='Imagenes/Correcta.png' width='50px'></center><hr>";
         $aciertos++;
@@ -115,7 +115,7 @@
 
     //pregunta 9
     echo "<h3 style='font-family:Impact;'> ¿Cual es el pais mas sucio? </h3>";
-    echo "<h5>Repuesta seleccionada ".$pregunta9." ---- Correcta = Austria-Hungria</h5>";
+    echo "<h5>Repuesta seleccionada ".$pregunta9." ---- Correcta = India</h5>";
     if(strtoupper($pregunta9) == "INDIA"){
         echo "<center><img src='Imagenes/Correcta.png' width='50px'></center><hr>";
         $aciertos++;
@@ -125,7 +125,7 @@
 
     //pregunta 10
     echo "<h3 style='font-family:Impact;'> ¿Que año termino de ser firmado el tratado de Versalles? </h3>";
-    echo "<h5>Repuesta seleccionada ".$pregunta10." ---- Correcta = Austria-Hungria</h5>";
+    echo "<h5>Repuesta seleccionada ".$pregunta10." ---- Correcta = 1919</h5>";
     if($pregunta10 == "1919"){
         $aciertos++;
         echo "<center><img src='Imagenes/Correcta.png' width='50px'></center><hr>";
@@ -134,5 +134,8 @@
     }
 
     echo "CALIFICACIÓN FINAl = " . ($aciertos * 10) . "%";
+    if($aciertos==90){
+        echo "<center><img src='Imagenes/90%.PNG' width='50px'></center><hr>";
+    }
 
 ?>
