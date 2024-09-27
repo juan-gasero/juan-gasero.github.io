@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen en línea</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body style="background-color: black; background-image: url(Imagenes/Dat_boi.gif);">
+    <div class="container">
+        <form action="practica4.php" method="POST">
+            <div class="row">
+                <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: aliceblue; text-align: center;">Exámen de Geografia y antropologia general</h1> <hr>
+                <p style="color: aliceblue;">Nombre de usuario o ejector<input type="text" name="Nombre" ></p>
+                <p style="color: aliceblue;">Hecho por Juan Fernando Gastélum Quintero</p>
+                <hr>
+                    <div class="card mb-4">
+                        <div class="card-header" style="background-color: rgb(75, 75, 75); font-family: 'Times New Roman', Times, serif; font-size: 75; color: #ffff;">
+                        1. ¿Qué pais inicio la primera guerra mundial?
+                        </div>
+                        <div class="card-body" style="background-color: rgb(75, 75, 75); font-family: 'Times New Roman', Times, serif; font-size: 75;">
+                            <p style="color: aliceblue;"><input type="radio" name="pregunta1" value= "Austria-Hungria" required> Austria-Hungria </p>
+                            <p style="color: aliceblue;"><input type="radio" name="pregunta1" value="Mocorito" required> El Soberano reino de Mocorito </p>
+                            <p style="color: aliceblue;"><input type="radio" name="pregunta1" value="Imperio_Otomano" required> Imperio Otomano</p>
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-4" style="background-color: rgb(75, 75, 75); font-family: 'Times New Roman', Times, serif; font-size: 75;">
+                        <p style="color: aliceblue;">
+                            2. La ciudad de Pékin es la capital oficial de: <input type="text" name="pregunta2" required>
+                        </p>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header" style="background-color: rgb(75, 75, 75); font-family: 'Times New Roman', Times, serif; font-size: 75; color: aliceblue;">
+                        3. ¿Cuál pais tiene un aguila en su bandera y en su escudo de armas? (Selecciona 2)
+                        </div>
+                        <div class="card-body" style="background-color: rgb(75, 75, 75); font-family: 'Times New Roman', Times, serif; font-size: 75;">
+                            <p style="color: aliceblue;"><input type="checkbox" name="pregunta3[]" value="Memexico" > México </p>
+                            <p style="color: aliceblue;"><input type="checkbox" name="pregunta3[]" value="Bundesliga" > Alemania </p>
+                            <p style="color: aliceblue;"><input type="checkbox" name="pregunta3[]" value="ElrecienNacido" > Serbia </p>
+                            
+                        </div>
+                    </div>
+                    <div class=" card mb-4" style="background-color: rgb(75, 75, 75); font-family: 'Times New Roman', Times, serif; font-size: 75;"><div class="card-header" style="background-color: grey; color: #ffff;"> 4.¿Cuál fue la razon principal de la caida del Imperio Romano?</div>
+                    <div class="card-body" style="background-color: rgb(75, 75, 75); font-family: 'Times New Roman', Times, serif; font-size: 75;">
+                        <center>
+                            <p style="color: aliceblue;"><input type="radio" name="pregunta4"value="Problemas" required>Problemas politicos, debilidad y invasiones</p>
+                            <p style="color: aliceblue;"><input type="radio" name="pregunta4"value="Ouuuyea" required>El regreso del Chacarron de entre los muertos</p>
+                            <p style="color: aliceblue;"><input type="radio" name="pregunta4"value="Francia" required>Estaba muy sucio jaja</p>
+                            <p style="color: aliceblue;"><input type="radio" name="pregunta4"value="CerroBajo" required>La independencia de Valle Alto como la Atlantida</p>
+                            <p style="color: aliceblue;"><input type="radio" name="pregunta4"value="Frutas" required>El limon estaba muy caro</p>
+                            <p style="color: aliceblue;"><input type="radio" name="pregunta4"value="Tamales" required>Hubo concierto de Tyler, the creator en Mesopotamia y por eso se fueron</p>
+                        </center>
+                    </div>
+                </div>
+                    <div class=" card mb-4" style="background-color: rgb(75, 75, 75); font-family: 'Times New Roman', Times, serif; font-size: 75;"><div class="card-header" style="background-color: grey; color: #ffff;">5.¿Que paises de estos tienen piramides? (selecciona 3)</div><div class="card-body">
+                        <p style="color: aliceblue;"><input type="checkbox" name="pregunta5[]"value="Milan">Italia</p>
+                        <p style="color: aliceblue;"><input type="checkbox" name="pregunta5[]"value="SUDAN">Súdan</p>
+                        <p style="color: aliceblue;"><input type="checkbox" name="pregunta5[]"value="barva">Barbados</p>
+                        <p style="color: aliceblue;"><input type="checkbox" name="pregunta5[]"value="EGIPTO">Egipto</p>
+                        <p style="color: aliceblue;"><input type="checkbox" name="pregunta5[]"value="afa">Alaska</p>
+                        <p style="color: aliceblue;"><input type="checkbox" name="pregunta5[]"value="Pechofrio">La Gran Badiramochis</p>
+                        <p style="color: aliceblue;"><input type="checkbox" name="pregunta5[]"value="MEXICO">México</p>
+                    </div></div>
+                    <div class=" card mb-4" style="background-color: rgb(75, 75, 75); font-family: 'Times New Roman', Times, serif; font-size: 75;"><div class="card-header" style="background-color: grey; color: #ffff;">6.¿Como se llama este pais? <br><img src="Imagenes/NZ.png" alt="pais"></div><div class="card-body">
+                        <p style="color: aliceblue;"> <input type="radio" name="pregunta6"value="BB">Congo</p>
+                        <p style="color: aliceblue;"> <input type="radio" name="pregunta6"value="ZA">Polinesia Francesa</p>
+                        <p style="color: aliceblue;"> <input type="radio" name="pregunta6"value="NZ">Nueva Zelanda</p>
+                        <p style="color: aliceblue;"> <input type="radio" name="pregunta6"value="SA">Iran</p>
+                    </div></div>
+                    <div class=" card mb-4" style="background-color: rgb(75, 75, 75); font-family: 'Times New Roman', Times, serif; font-size: 75;"><div class="card-header" style="background-color: grey; color: #ffff;">7.De que pais es sede de la liga de futbol'MLS'</div><div class="card-body">
+                        <p style="color: aliceblue;"><input type="radio" name="pregunta7"value="USA">Estados Unidos de America</p>
+                        <p style="color: aliceblue;"><input type="radio" name="pregunta7"value="tur">Turquia</p>
+                        <p style="color: aliceblue;"><input type="radio" name="pregunta7"value="rus">Rusia</p>
+                        <p style="color: aliceblue;"><input type="radio" name="pregunta7"value="tangananica">Mali</p>
+                        <p style="color: aliceblue;"><input type="radio" name="pregunta7"value="tangananaca">Macedonia</p>
+                    </div></div>
+                    <div class=" card mb-4" style="background-color: rgb(75, 75, 75);"><div class="card-header" style="background-color: grey; color: #ffff;">8. <input type="text" name="pregunta8"id="CometeUnPan" required>Es el pais mas grande del mundo</div></div>
+                    <div class=" card mb-4" style="background-color: rgb(75, 75, 75);"><div class="card-header" style="background-color: grey; color: #ffff;">9. <input type="text" name="pregunta9"id="Cochinadas" required>es el pais mas sucio</div></div>
+                    <div class=" card mb-4" style="background-color: rgb(75, 75, 75);"><div class="card-header" style="background-color: grey; color: #ffff;">10. <input type="text" name="pregunta10"id="Año" required>Fue el año donde se firmaron los tratados de versalles</div></div>
+            </div>
+            <br><Center><input type="submit" class="btn btn-Dark " value="Terminar examen" style="color: aliceblue; background-image: url(Imagenes/);"></Center>
+        </form>
+    </div>
+    <h6>Respuesta Numero</h6>
+</body>
+</html>
