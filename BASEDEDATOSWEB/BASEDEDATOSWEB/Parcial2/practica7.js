@@ -151,3 +151,6 @@ function pintar(p1, p2, p3){
    document.getElementById("cuadro"+p2).style.backgroundColor = "#1d6347";
    document.getElementById("cuadro"+p3).style.backgroundColor = "#1d6347";
 }
+function ZAWARUDO() {
+   window.location.href="BASEDEDATOSWEB/BASEDEDATOSWEB/Parcial2/practica7.html";
+}
