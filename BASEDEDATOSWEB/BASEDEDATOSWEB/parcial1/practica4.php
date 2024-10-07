@@ -1,5 +1,7 @@
 <?php
-echo "<body style='background-image:url(Imagenes/backg.png);'>";
+
+echo "<body style='background-color:lightgray;'>";
+echo "<style>h4{font-family: "Lucida Console", Courier, monospace;}</style>"
     $nombre= $_POST["Nombre"];
     $aciertos = 0;
     $pregunta1 = $_POST["pregunta1"];
@@ -148,7 +150,7 @@ echo "<body style='background-image:url(Imagenes/backg.png);'>";
         echo "<center><img src='Imagenes/50.png' width='110px'><h4>E</h4></center>";
     }
     if($aciertos==4|| $aciertos== 3 || $aciertos== 2|| $aciertos== 1){
-        echo "<center><img src='Imagenes/EFE.gif' width='120px'><h4>F, Felicidades puedes considerarte <img src='Imagenes/text-1727310786161.png' width='120px'></h4></center>";
+        echo "<center><img src='Imagenes/EFE.gif' width='120px'><h4>F, Felicidades puedes considerarte <img src='Imagenes/text-1727310786161.png' width='220px'></h4></center>";
     }
     if($aciertos== 0){
         echo"<center><img src='Imagenes/BURODECREDITO.jpeg' width='110px'><h4>-F, Por gente como tu, el cereal lleva sugerencia de uso</h4></center>";
