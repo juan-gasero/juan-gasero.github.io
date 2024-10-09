@@ -1,7 +1,6 @@
 <?php
 
 echo "<body style='background-color:lightgray;'>";
-echo "<style>h4{font-family: "Lucida Console", Courier, monospace;}</style>"
     $nombre= $_POST["Nombre"];
     $aciertos = 0;
     $pregunta1 = $_POST["pregunta1"];
